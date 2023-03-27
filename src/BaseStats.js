@@ -1,9 +1,12 @@
 import "./BaseStats.css";
 
-const BaseStats = ({ stats: { hp, attack, defense, speed } }) => {
+const BaseStats = ({ stats: { hp, attack, defense, speed }, clicker }) => {
   return (
     <div className="base-stats">
       <h1>BaseStats</h1>
+      <button className="sp-stats" onClick={clicker}>
+        Check Special Stats
+      </button>
       <table>
         <tbody>
           <tr>
